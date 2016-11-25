@@ -7,5 +7,5 @@ RUN wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.s
 	&& nvm install 6.9.1 \ 
 	&& curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
 	&& echo "deb http://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list \
-	&& apt-get update && apt-get install yarn
+	&& apt-get update && apt-get install -y yarn
 CMD ["bash"]
